@@ -1,0 +1,2 @@
+INSERT INTO temp VALUES(1);
+DELETE FROM temp WHERE id = 1;

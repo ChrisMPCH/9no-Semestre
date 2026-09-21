@@ -1,0 +1,72 @@
+SISTEMA DE MONITOREO DE CALIDAD DEL AGUA
+Descripción general
+El proyecto propone un sistema para registrar y analizar variables 
+relacionadas con la calidad del agua en una laguna. La información 
+obtenida por sensores se almacena en una base de datos y 
+posteriormente puede ser utilizada por modelos de análisis y 
+aprendizaje automático.
+Objetivo general
+Diseñar una plataforma de adquisición y organización de datos que permita 
+consultar mediciones ambientales y generar información útil para la toma de 
+decisiones.
+Objetivos específicos
+Registrar periódicamente las variables medidas por los sensores.
+Almacenar las observaciones junto con la fecha, hora y ubicación.
+Detectar valores fuera de los intervalos esperados.
+Preparar los datos para su análisis mediante modelos computacionales.
+Variables consideradas
+Temperatura del agua
+Unidad: grados Celsius
+escripción: indica la temperatura registrada en el punto de muestreo.
+pH
+Unidad: sin unidad
+Descripción: representa el nivel de acidez o alcalinidad del agua.
+Oxígeno disuelto
+Unidad: miligramos por litro
+Descripción: indica la cantidad de oxígeno disponible en el agua.
+Turbidez
+Unidad: NTU
+Descripción: permite estimar la presencia de partículas suspendidas.
+Proceso de adquisición de datos
+Etapa 1. Lectura
+Los sensores realizan una medición cada diez minutos.
+Etapa 2. Validación
+El sistema comprueba que los valores se encuentren dentro de los 
+intervalos permitidos y que la lectura incluya fecha, hora e i
+dentificador del sensor.
+Etapa 3. Almacenamiento
+Las mediciones válidas se registran en la base de datos.
+Etapa 4. Análisis
+Los datos almacenados se utilizan para generar estadísticas, 
+detectar anomalías y alimentar modelos de aprendizaje automático.
+Ejemplo de registro
+Fecha 2026-08-20
+Hora 10:30
+Sensor AQ-03
+Temperatura 18.7
+pH 7.2
+Oxígeno disuelto 6.8
+Turbidez 11.4
+Estado válido
+Criterios de validación
+Una medición debe contener identificador del sensor, fecha y hora.
+Los campos numéricos no deben contener texto.
+Una observación incompleta debe marcarse para revisión.
+Los valores anómalos no deben eliminarse automáticamente.
+Consideraciones para el análisis
+No todos los valores fuera del intervalo esperado representan errores. 
+Una anomalía puede corresponder a un cambio real en las condiciones ambien
+tales. Por esta razón, el sistema debe conservar el dato original y regist
+rar el resultado del proceso de validación.
+Metadatos
+Proyecto Monitoreo de calidad del agua
+Área Inteligencia Artificial e Internet de las Cosas
+Versión 1.0
+Fecha de actualización 25 de agosto de 2026
+Responsable Equipo de monitoreo
+Nota final
+La organización del documento debe permitir que una persona o un sistema 
+automático identifique claramente sus secciones, subsecciones, listas, datos y relaciones. 
+La representación final será utilizada posteriormente para dividir el -
+contenido en fragmentos semánticos destinados a un sistema de recuperación 
+de información.
